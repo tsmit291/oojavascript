@@ -1,7 +1,10 @@
-function Car(make){
+function Car(make,gas,on,mileage){
   this.make = make;
+  this.gas = gas;
+  this.on = false;
+  this.mileage = mileage;
 }
-var prius = new Car('toyota');
+var prius = new Car('toyota', '10', 'true', '111111');
 
 console.log(prius);
 // constructors are uppercase, functions are lowercase.
